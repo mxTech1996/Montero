@@ -1,8 +1,10 @@
 'use client';
+import { useCart } from 'ecommerce-mxtech';
 // components/LifeNavbar.js
 import { FiShoppingCart, FiMenu } from 'react-icons/fi';
 
 const LifeNavbar = () => {
+  const { products } = useCart();
   // Array para generar los enlaces de navegación, ahora con la propiedad 'href'
   const navLinks = [
     { name: 'Products', href: '/#products', hasPlus: false },
@@ -39,8 +41,12 @@ const LifeNavbar = () => {
 
           {/* --- Iconos y Botón --- */}
           <div className='flex items-center space-x-6'>
-            <a href='/my-cart' className='text-black'>
-              <FiShoppingCart size={21} />
+            {/* --- Icono del Carrito con contador --- */}
+            <a href='/cart' className='relative'>
+              <FiShoppingCart size={24} className='text-gray-800' />
+              <span className='absolute -top-3 -right-3 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center'>
+                {products.length}
+              </span>
             </a>
             <a
               href='/more-information'
