@@ -21,7 +21,7 @@ const LifeNavbar = () => {
         <div className='flex items-center justify-between py-5'>
           {/* --- Logo --- */}
           <a href='/' className='text-4xl font-bold text-black'>
-            Life
+            Montero
           </a>
 
           {/* --- Enlaces de Navegación para Escritorio --- */}
