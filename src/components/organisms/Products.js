@@ -1,11 +1,13 @@
 // components/ServicesShowcase.js
 import { dataSite } from '@/data';
+import { useCart } from 'ecommerce-mxtech';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
 const products = dataSite.products;
 
 const ProductsShowcase = () => {
+  const { handleAddOrRemoveProduct, validateProductInCart } = useCart();
   const gridVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -38,45 +40,58 @@ const ProductsShowcase = () => {
           viewport={{ once: true, amount: 0.1 }}
         >
           {/* Usamos .slice(0, 4) para mostrar 4 productos como en la imagen */}
-          {products.map((service) => (
-            <motion.div
-              key={service.id}
-              className='grid grid-cols-1 md:grid-cols-2 bg-stone-100/70'
-              variants={cardVariants}
-              whileHover={{ scale: 1.02, y: -5 }}
-              transition={{ type: 'spring', stiffness: 300 }}
-            >
-              {/* Columna Izquierda: Imagen y Precio */}
-              <div className='relative aspect-w-1 aspect-h-1'>
-                <Image
-                  src={service.image}
-                  alt={service.name}
-                  layout='fill'
-                  objectFit='cover'
-                />
-                <div className='absolute top-4 left-4 bg-black/80 text-white px-3 py-1.5 rounded-md text-sm font-semibold'>
-                  $ {parseFloat(service.price).toFixed(2)} USD
-                </div>
-              </div>
+          {products.map((service) => {
+            const isInCart = validateProductInCart(service.id);
+            const handleClick = () => {
+              handleAddOrRemoveProduct(service.id);
+            };
 
-              {/* Columna Derecha: Información y Botón */}
-              <div className='p-8 flex flex-col'>
-                <div className='flex-grow'>
-                  <h3 className='font-semibold uppercase text-lg text-gray-900'>
-                    {service.name}
-                  </h3>
-                  <p className='mt-2 text-sm text-gray-600 line-clamp-3'>
-                    {service.description}
-                  </p>
+            return (
+              <motion.div
+                key={service.id}
+                className='grid grid-cols-1 md:grid-cols-2 bg-stone-100/70'
+                variants={cardVariants}
+                whileHover={{ scale: 1.02, y: -5 }}
+                transition={{ type: 'spring', stiffness: 300 }}
+              >
+                {/* Columna Izquierda: Imagen y Precio */}
+                <div className='relative aspect-w-1 aspect-h-1'>
+                  <Image
+                    src={service.image}
+                    alt={service.name}
+                    layout='fill'
+                    objectFit='cover'
+                  />
+                  <div className='absolute top-4 left-4 bg-black/80 text-white px-3 py-1.5 rounded-md text-sm font-semibold'>
+                    $ {parseFloat(service.price).toFixed(2)} USD
+                  </div>
                 </div>
-                <div className='mt-6'>
-                  <button className='w-full bg-black text-white uppercase font-semibold text-sm py-3 hover:bg-gray-800 transition-colors'>
-                    Add to Cart
-                  </button>
+
+                {/* Columna Derecha: Información y Botón */}
+                <div className='p-8 flex flex-col'>
+                  <div className='flex-grow'>
+                    <h3 className='font-semibold uppercase text-lg text-gray-900'>
+                      {service.name}
+                    </h3>
+                    <p className='mt-2 text-sm text-gray-600 line-clamp-3'>
+                      {service.description}
+                    </p>
+                  </div>
+                  <div className='mt-6'>
+                    <button
+                      onClick={handleClick}
+                      style={{
+                        backgroundColor: isInCart ? '#DF3E3EFF' : '#000',
+                      }}
+                      className='w-full bg-black text-white uppercase font-semibold text-sm py-3 hover:bg-gray-800 transition-colors'
+                    >
+                      {isInCart ? 'Remove from Cart' : 'Add to Cart'}
+                    </button>
+                  </div>
                 </div>
-              </div>
-            </motion.div>
-          ))}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
     </section>
