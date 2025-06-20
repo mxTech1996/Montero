@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   plugins: [
+    require('@tailwindcss/line-clamp'), // <-- Añade esta línea
     require('@tailwindcss/aspect-ratio'), // <-- Añade esta línea
   ],
   content: [

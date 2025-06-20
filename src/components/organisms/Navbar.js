@@ -5,10 +5,10 @@ import { FiShoppingCart, FiMenu } from 'react-icons/fi';
 const LifeNavbar = () => {
   // Array para generar los enlaces de navegación, ahora con la propiedad 'href'
   const navLinks = [
-    { name: 'Demos', href: '/demos', hasPlus: true },
-    { name: 'About Us', href: '/about-us', hasPlus: true },
-    { name: 'Events', href: '/events', hasPlus: false },
-    { name: 'Lessons', href: '/lessons', hasPlus: false },
+    { name: 'Products', href: '/#products', hasPlus: false },
+    { name: 'About Us', href: '/#about', hasPlus: false },
+    { name: 'Services', href: '/#services', hasPlus: false },
+    { name: 'Benefits', href: '/#benefits', hasPlus: false },
     { name: 'All Pages', href: '/pages', hasPlus: true },
   ];
 
@@ -39,14 +39,14 @@ const LifeNavbar = () => {
 
           {/* --- Iconos y Botón --- */}
           <div className='flex items-center space-x-6'>
-            <a href='/cart' className='text-black'>
+            <a href='/my-cart' className='text-black'>
               <FiShoppingCart size={21} />
             </a>
             <a
-              href='/get-a-quote'
+              href='/more-information'
               className='hidden sm:block bg-black text-white text-sm font-semibold uppercase tracking-wider px-8 py-4 hover:bg-gray-800 transition-colors'
             >
-              Get a Quote
+              Contact Us
             </a>
 
             {/* --- Botón de Menú para Móvil --- */}
