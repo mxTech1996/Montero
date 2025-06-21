@@ -45,7 +45,7 @@ export const dataSite = {
   name: 'Montero',
   url: 'https://es.wiktionary.org/wiki/hol',
   telephone: '5573724368',
-  email: 'admcaminos@emailsecure.lat',
+  email: 'admmontero@emailsecure.lat',
   address:
     'TENAYUCA 55, INT 401, LETRAN VALLE, BENITO JUAREZ, CIUDAD DE MEXICO, C.P. 03650',
   description:
