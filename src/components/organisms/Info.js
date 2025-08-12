@@ -7,34 +7,28 @@ import { dataSite } from '@/data';
 // He enriquecido tu data con una imagen para cada servicio para un diseño más visual
 const services = [
   {
-    title: 'Consulting and Training',
+    title: 'Retail Strategy & Consulting',
     description:
-      'CSL offers audit and training services in cleaning and hygiene, tailored for institutions, the hospitality industry, and the industrial sector.',
-    image: dataSite.image_hero,
+      'We analyze your market to develop custom strategies for product assortment, pricing, and merchandising that boost sales and customer loyalty.',
+    image: dataSite.image_hero, // Placeholder image
   },
   {
-    title: 'Supply of Products',
+    title: 'Supply Chain & Inventory Management',
     description:
-      'We provide a comprehensive range of cleaning and hygiene products, industrial-strength chemicals, and complete systems for direct purchase.',
-    image: dataSite.image_hero2,
+      'Streamline your logistics from supplier to shelf. We help optimize stock levels, reduce waste, and ensure your key products are always available.',
+    image: dataSite.image_hero2, // Placeholder image
   },
   {
-    title: 'Values',
+    title: 'Store Layout & Staff Training',
     description:
-      'Our core values are a commitment to comprehensive solutions, deep expertise and professionalism, and building a client-centric partnership.',
-    image: dataSite.services[0].image,
+      'Design an efficient and welcoming store layout. We also provide training to equip your staff with deep product knowledge and effective sales techniques.',
+    image: dataSite.services[0].image, // Placeholder image
   },
   {
-    title: 'Product Ingredients',
+    title: 'Wholesale Product Supply',
     description:
-      'We prioritize safe and effective formulas, utilizing plant-based surfactants, natural enzymes, and other eco-friendly components.',
-    image: dataSite.services[1].image,
-  },
-  {
-    title: 'Clients',
-    description:
-      'We proudly serve a diverse range of clients across the industrial, institutional, hospitality, domestic, and corporate office sectors.',
-    image: dataSite.services[2].image,
+      'Gain access to our curated catalog of high-quality, professional-grade cleaning products and chemicals at competitive wholesale prices.',
+    image: dataSite.services[1].image, // Placeholder image
   },
 ];
 
