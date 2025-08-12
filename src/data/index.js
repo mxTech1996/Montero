@@ -43,7 +43,7 @@ export const footerData = [
 
 export const dataSite = {
   name: 'Montero',
-  url: 'https://es.wiktionary.org/wiki/hol',
+  url: 'https://www.montero.lat/',
   telephone: '5573724368',
   email: 'admmontero@emailsecure.lat',
   address:
@@ -160,79 +160,29 @@ export const dataSite = {
   ],
   products: [
     {
-      id: 882,
-      name: 'Post Implementation Support and Performance Monitoring',
-      category: null,
-      description:
-        'Offering ongoing support, follow-up, and performance monitoring after initial consulting projects or product rollouts to ensure long-term effectiveness and client satisfaction.',
-      price: '4099.99',
-      stock: 100,
-      content:
-        "Post implementation support refers to the ongoing assistance provided to website users (both customers and internal staff) and the technical infrastructure after the site has gone live. It's about maintaining a smooth operation and quickly addressing any issues.",
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/monn_15.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 880,
-      name: 'Regulatory Compliance and Safety Training',
-      category: null,
-      description:
-        'Regulatory Compliance and Safety Training is fundamental for any organization, regardless of its size or sector. It refers to the set of processes and activities designed to ensure that a company operates within the bounds of relevant laws, regulations, standards, and internal policies.',
-      price: '2799.99',
-      stock: 100,
-      content:
-        'Risk Assessment,Identifying areas where non compliance could lead to fines, legal penalties, reputational damage, injuries, or negative environmental impacts,Mitigation,Developing and implementing controls and measures to reduce the likelihood and impact of compliance risks.',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/monn_1_3.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
-      id: 875,
-      name: 'Customized Cleaning Program Development:',
-      category: null,
-      description:
-        'The development of a customized cleaning program is a strategic approach to ensure that a space, whether commercial or residential, receives the specific cleaning attention it needs, rather than applying a generic.',
-      price: '799.99',
-      stock: 100,
-      content:
-        'Adaptation to Specific Needs,Efficiency and Cost Savings,Flexibility and Adaptability,Improved Health and Safety,Reduced Spread of Illness: Prioritizes the cleaning and disinfection of critical area,to minimize the spread of germs, allergens, and bacteria,Healthier Work/Living Environment,Contributes to fewer sick days for employees or residents and greater peace of mind.',
-      product_type: 'NORMAL',
-      image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/mon_8_.jpg',
-      image2: null,
-      image3: null,
-    },
-    {
       id: 876,
-      name: 'Product Sourcing and Procurement Guidance',
+      name: 'Automatic Soap Dispenser',
       category: null,
       description:
-        'Product Sourcing and Procurement Guidance refers to the systematic process of identifying, evaluating, and acquiring the goods, services, or raw materials that an organization needs to operate or create its own products.',
+        'Touchless dispenser for liquid soap or hand sanitizer, promoting hygiene,Motion-sensor activation to prevent cross-contamination,Adjustable dispensing volume,Battery-operated with long battery life.,Sleek, modern design suitable for any space,Ideal For: Homes, offices, restaurants, and healthcare facilities.',
       price: '999.99',
       stock: 100,
-      content:
-        'The process of identifying and selecting suppliers for goods, materials, or services. It\'s about finding the "right" partners,To find reliable suppliers, ensure competitive pricing, maintain quality standards, establish long-term relationships, and often to diversify the supplier base to mitigate risk.\r\nMarket research, supplier identification.',
+      content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/monn_9_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/montero_17_.jpg',
       image2: null,
       image3: null,
     },
     {
       id: 877,
-      name: 'Inventory Management Solutions',
+      name: 'Heavy-Duty Scrub Brushes',
       category: null,
       description:
-        'An inventory management solution is a system, often software-based, that helps businesses control and monitor their stock of products and materials. Its primary goal is to optimize inventory levels to meet customer demand without incurring excessive costs from holding stock or suffering losses due to shortages.',
+        'Sturdy cleaning brushes built for removing tough dirt, grime, and stains,Key Features,Ergonomic handle for comfort and grip,Durable bristles for heavy scrubbing,Resistant to chemicals and hot water,Available in various sizes for different tasks,Ideal For, Kitchens, bathrooms, workshops, and outdoor areas.',
       price: '2099.99',
       stock: 100,
-      content:
-        'Inventory Level Optimization,Cost Reduction,Improved Operational Efficiency,Greater Visibility and Accuracy,Enhanced Customer Satisfaction,ensuring that products are available when customers want them.',
+      content: '',
       product_type: 'NORMAL',
       image:
         'https://cms-webserver-statics.s3.amazonaws.com/media/products/monn_10_.jpg',
@@ -273,17 +223,64 @@ export const dataSite = {
     },
     {
       id: 881,
-      name: 'Troubleshooting and Problem Resolution',
+      name: 'Industrial Grade Disinfectant',
       category: null,
       description:
-        'Providing expert diagnostic and solution-oriented services for persistent cleaning challenges, such as stubborn stains, odor issues, or inefficient processes.',
+        'A concentrated cleaning and sanitizing solution designed for high-traffic areas,Key Features,Kills 99.9% of bacteria and viruses,Suitable for hospitals, schools, and public facilities,Long-lasting antibacterial effect,Can be diluted for economy and versatility,Ideal For,Professional cleaning services and commercial use.',
       price: '2099.99',
       stock: 100,
-      content:
-        "Systematic and Methodical Approach, It's not about random trial and error, but about following logical and organized steps,Root Cause Oriented: The goal is not just to fix symptoms,Iterative, The process often involves cycles of testing, observation, and adjustment until a solution is achieved.\r\nData and Evidence Based,Decisions are made based on collected information, not assumptions.",
+      content: '',
       product_type: 'NORMAL',
       image:
-        'https://cms-webserver-statics.s3.amazonaws.com/media/products/monn_14_.jpg',
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/montero_16_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 875,
+      name: 'Customized Cleaning Program Development',
+      category: null,
+      description:
+        'The development of a customized cleaning program is a strategic approach to ensure that a space, whether commercial or residential, receives the specific cleaning attention it needs, rather than applying a generic.',
+      price: '799.99',
+      stock: 100,
+      content:
+        'Adaptation to Specific Needs,Efficiency and Cost Savings,Flexibility and Adaptability,Improved Health and Safety,Reduced Spread of Illness: Prioritizes the cleaning and disinfection of critical area,to minimize the spread of germs, allergens, and bacteria,Healthier Work/Living Environment,Contributes to fewer sick days for employees or residents and greater peace of mind.',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/mon_8_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 882,
+      name: 'Eco Friendly Multipurpose Cleaner',
+      category: null,
+      description:
+        'Eco Friendly Multipurpose Cleaner Biodegradable solution for household and commercial cleaning.',
+      price: '4099.99',
+      stock: 100,
+      content:
+        'A biodegradable, plant-based cleaning solution suitable for kitchens, bathrooms, and floors,Key Features,Non toxic and safe for children and pets,Leaves a fresh citrus scent,Effective against grease, dirt, and stains,Packaging made from recycled materials,Ideal For,Homes, offices, and eco-conscious businesses.',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/montero_15_.jpg',
+      image2: null,
+      image3: null,
+    },
+    {
+      id: 880,
+      name: 'Microfiber Cleaning Cloths',
+      category: null,
+      description:
+        'Risk Assessment,Identifying areas where non compliance could lead to fines, legal penalties, reputational damage, injuries, or negative environmental impacts,Mitigation,Developing and implementing controls and measures to reduce the likelihood and impact of compliance risks.',
+      price: '2799.99',
+      stock: 100,
+      content:
+        'Risk Assessment,Identifying areas where non compliance could lead to fines, legal penalties, reputational damage, injuries, or negative environmental impacts,Mitigation,Developing and implementing controls and measures to reduce the likelihood and impact of compliance risks.',
+      product_type: 'NORMAL',
+      image:
+        'https://cms-webserver-statics.s3.amazonaws.com/media/products/pexels-karolina-grabowska-4239146.jpg',
       image2: null,
       image3: null,
     },
