@@ -1,4 +1,4 @@
-// components/RetailConsultingIntro.js
+// components/CleaningRetailIntro.js
 import { useEffect } from 'react';
 import {
   motion,
@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { useRef } from 'react';
 import { dataSite } from '@/data';
 
-// Componente reutilizable para el contador animado
+// Reusable component for the animated counter
 function Counter({ from = 0, to }) {
   const count = useMotionValue(from);
   const rounded = useTransform(count, (latest) => Math.round(latest));
@@ -27,26 +27,26 @@ function Counter({ from = 0, to }) {
   return <motion.span ref={ref}>{rounded}</motion.span>;
 }
 
-const ConsultingIntro = () => {
-  // Datos para la sección
+const CleaningRetailIntro = () => {
+  // Data for the "Cleaning Retail Consulting" section
   const coreServices = [
-    { number: '01.', title: 'Merchandising Strategy' },
-    { number: '02.', title: 'Supply Chain Efficiency' },
+    { number: '01.', title: 'Product Assortment Optimization' },
+    { number: '02.', title: 'Inventory & Supply Chain Management' },
   ];
 
   const stats = [
-    { number: 12, label: 'Projects' },
-    { number: 2, label: 'Years' },
-    { number: 15, label: 'Clients' },
-    { number: 20, label: 'Strategies' },
+    { number: 12, label: 'Successful Projects' },
+    { number: 5, label: 'Years of Experience' },
+    { number: 15, label: 'Satisfied Clients' },
+    { number: 20, label: 'Strategies Implemented' },
   ];
 
   return (
     <section id='intro' className='bg-white py-20 lg:py-28'>
       <div className='container mx-auto px-4 sm:px-6 lg:px-8'>
-        {/* --- Fila Superior --- */}
+        {/* --- Top Row --- */}
         <div className='grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center'>
-          {/* Columna Izquierda: Imagen con superposición */}
+          {/* Left Column: Image with overlay */}
           <motion.div
             className='relative w-full aspect-[4/3]'
             initial={{ opacity: 0, x: -50 }}
@@ -55,6 +55,7 @@ const ConsultingIntro = () => {
             transition={{ duration: 0.8 }}
           >
             <Image
+              // Ensure this path points to a relevant image
               src={dataSite.services[1].image}
               alt='Clean and organized retail aisle with cleaning products'
               layout='fill'
@@ -69,12 +70,12 @@ const ConsultingIntro = () => {
               transition={{ duration: 0.6, delay: 0.5 }}
             >
               <p className='text-lg font-semibold max-w-xs'>
-                We Develop Customized Retail Strategies.
+                We develop custom retail strategies for your business.
               </p>
             </motion.div>
           </motion.div>
 
-          {/* Columna Derecha: Texto y Servicios */}
+          {/* Right Column: Text and Services */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -82,16 +83,15 @@ const ConsultingIntro = () => {
             transition={{ duration: 0.8 }}
           >
             <p className='text-sm font-bold text-gray-500 uppercase tracking-wider'>
-              Retail Excellence
+              Excellence in Cleaning Retail
             </p>
             <h2 className='text-3xl md:text-4xl font-serif text-gray-900 mt-2'>
-              Your Business & Brand Deserve the Best
+              Driving Success in Your Cleaning Supply Store
             </h2>
             <p className='mt-4 text-gray-600'>
-              Taking care of both your operational and brand health is
-              essential. We help retailers make choices and engage in strategies
-              that contribute positively to their overall growth and customer
-              satisfaction.
+              In a competitive market, efficient management is crucial. We help
+              retailers make strategic decisions that optimize operations,
+              enhance the customer experience, and drive sustainable growth.
             </p>
             <div className='mt-8 space-y-4'>
               {coreServices.map((service) => (
@@ -114,7 +114,7 @@ const ConsultingIntro = () => {
           </motion.div>
         </div>
 
-        {/* --- Fila Inferior: Estadísticas --- */}
+        {/* --- Bottom Row: Statistics --- */}
         <div className='grid grid-cols-2 md:grid-cols-4 gap-8 text-center mt-24 lg:mt-32'>
           {stats.map((stat) => (
             <motion.div
@@ -138,4 +138,4 @@ const ConsultingIntro = () => {
   );
 };
 
-export default ConsultingIntro;
+export default CleaningRetailIntro;

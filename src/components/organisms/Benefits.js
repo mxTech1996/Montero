@@ -7,24 +7,24 @@ import { FiTrendingUp, FiSettings, FiStar } from 'react-icons/fi';
 const benefits = [
   {
     icon: <FiTrendingUp size={28} />,
-    title: 'Boost Sales & Profitability',
+    title: 'Increased Sales of High-Margin Products',
     description:
-      'We provide data-driven strategies to optimize pricing, promotions, and product placement, driving your revenue growth.',
-    href: '/services/sales-profitability',
+      'Our strategies highlight your most profitable cleaning products, optimizing shelf space and promotions to maximize your revenue.',
+    href: '/services/sales-optimization',
   },
   {
     icon: <FiSettings size={28} />,
-    title: 'Operational & Supply Chain Harmony',
+    title: 'Optimized Inventory & Logistics',
     description:
-      'Achieve a state of operational excellence. We help you streamline your supply chain and inventory for a seamless business flow.',
-    href: '/services/operations-harmony',
+      'We help you manage stock levels efficiently, from industrial chemicals to consumer goods, reducing waste and ensuring key products are always available.',
+    href: '/services/inventory-logistics',
   },
   {
     icon: <FiStar size={28} />,
-    title: 'Enhanced Brand & Customer Loyalty',
+    title: 'Superior In-Store Customer Experience',
     description:
-      'Build a brand that resonates. We help you craft superior customer experiences that foster loyalty and repeat business.',
-    href: '/services/brand-loyalty',
+      'Create a clean, organized, and helpful shopping environment that builds trust and turns one-time buyers into loyal customers.',
+    href: '/services/customer-experience',
   },
 ];
 
