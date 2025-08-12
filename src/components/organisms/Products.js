@@ -63,7 +63,7 @@ const ProductsShowcase = () => {
                     objectFit='cover'
                   />
                   <div className='absolute top-4 left-4 bg-black/80 text-white px-3 py-1.5 rounded-md text-sm font-semibold'>
-                    $ {parseFloat(service.price).toFixed(2)} USD
+                    $ {parseFloat(service.price).toFixed(2)} MXN
                   </div>
                 </div>
 
@@ -73,7 +73,7 @@ const ProductsShowcase = () => {
                     <h3 className='font-semibold uppercase text-lg text-gray-900'>
                       {service.name}
                     </h3>
-                    <p className='mt-2 text-sm text-gray-600 line-clamp-3'>
+                    <p className='mt-2 text-sm text-gray-600'>
                       {service.description}
                     </p>
                   </div>
