@@ -42,7 +42,7 @@ const LifeNavbar = () => {
           {/* --- Iconos y Botón --- */}
           <div className='flex items-center space-x-6'>
             {/* --- Icono del Carrito con contador --- */}
-            <a href='/cart' className='relative'>
+            <a href='/my-cart' className='relative'>
               <FiShoppingCart size={24} className='text-gray-800' />
               <span className='absolute -top-3 -right-3 bg-red-500 text-white text-xs font-semibold rounded-full w-5 h-5 flex items-center justify-center'>
                 {products.length}
